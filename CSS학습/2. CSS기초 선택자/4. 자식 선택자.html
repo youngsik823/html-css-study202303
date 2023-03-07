@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 바로 직속 자식을 선택함 */
+        /* 맨 뒤가 타켓, 앞에는 조건 */
+
+        ul > .orange {
+            background: orange;
+        }
+        /* > 가 자식이라는 뜻 */
+        body > div > ul > li {
+            color: red;
+        }
+    </style>
+    
+</head>
+<body>
+
+    
+
+    <h1 class="yellow low primary" id="change">안녕하세요</h1>
+
+    <div>  
+        <ul>
+            <li id="apple" class="reverse">사과</li>
+            <li>포도</li>
+            <li class="orange reverse">오렌지</li>
+        </ul>
+        <div>당근</div>
+        <p id="tomato">토마토</p>
+        <span class="orange">오렌지</span>
+    </div>
+</body>
+</html>
