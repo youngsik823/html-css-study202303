@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 전역속석이란?? -->
+    <form class="orange grape" action="#">
+        <!-- class 속성은 여러개수를 쓸수 있고 중복이 가능하다(그룹) -->
+        <!-- id 속성은 중복 안되고 여러개를 못쓴다 고유의 별칭(혼자) -->
+
+        <input title="닉네임" style="width: 200px;" type="text" name="nick" value="홍길동" readonly>
+            <!-- readonly 와 disabled는 둘다 수정을 못하지만
+            readonly는 데이터가 서버로 전송되고 
+            disabled 속성은 데이터가 서버로 전송되지 않는다 -->
+        <select name="coffee">
+            <option value="아메리카노">Americano</option>
+            <option value="카페라떼" selected>Caffe Latte</option>
+            <option value="카푸치노" disabled>Cappuchino</option>
+            <!-- 웹에서는 Americano가 보여지지만 서버에는 value값이 넘어간다 -->
+            
+        </select>
+
+        <button type="submit">확인</button>
+        <!-- button에 type="submit"을 안넣으면 기본적으로 타입이 submit이다 -->
+    </form>
+
+</body>
+</html>
