@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid gray;
+        }
+        .root {
+            width: 60%;
+        }
+        .parent {
+            width: 50%;
+            /* 300px */
+        }
+        .child {
+            width: 50%;
+            /* 150px */
+        }
+        /* px는 길이가 안변한다 (고정) */
+        /* percent는 부모대비 비율 */
+        /* percent는 축소확대 해도 비율을 맞춰준다 */
+    </style>
+</head>
+<body>
+    <!-- .root>.parent>.child*2 -->
+    <div class="root">Root
+        <div class="parent">Parent
+            <div class="child">Child1</div>
+            <div class="child">Child2</div>
+        </div>
+    </div>
+</body>
+</html>
