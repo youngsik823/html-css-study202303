@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 550px;
+            height: 350px;
+            border: 4px dashed gray;
+            margin: 50px auto 0;
+
+            /* 배경 속성 */
+            background-color: orange;
+            background-image: url('../../img/sky.jpg');
+            /* background-image: 를 쓰면 알아서 오버플로우 hidden을 해준다 */
+            /* img태그로 넣으면 사진이 튀어나온다 그러면 오버플로우 hidden으로 없애야 한다 */
+            
+            background-size: 150px 100px;
+            /* 가로 세로 */
+            background-repeat: no-repeat;
+            /* 반복 안하게 해준다 */
+            background-position: 30px 100px;
+            /* background-position: left bottom; */
+            /* x축 y축 위치를 조정해준다 */
+            
+            background: url('../../img/sky.jpg') orange no-repeat 150px 100px / 120px 100px ;
+            /* 포지션 / 사이즈 */
+            /* 위에있는 속성을 한번에 쓸수있다 */
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+</body>
+</html>
