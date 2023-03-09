@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 해제용 클래스 */
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both; /* both를 쓰면 left, right 둘다 clear 한다*/
+            /* after과 before을 쓸때 항상 위에 3개는 필수다 */
+        }
+        .ct {
+            width: 700px;
+            padding: 20px;
+            border: 3px solid;
+            margin: 20px;
+        }
+        .container1 {
+            border-color: red;
+        }
+        .container2 {
+            border-color: blue;
+        }
+        .container3 {
+            border-color: green;
+        }
+        .box {
+            width: 200px;
+            height: 150px;
+            border: 3px solid green;
+            background: yellowgreen;
+            border-radius: 20px;
+
+            float: left;    
+        }
+    </style>
+</head>
+<body>
+    <div class="clearfix ct container1">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="clearfix ct container2">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="clearfix ct container3">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
