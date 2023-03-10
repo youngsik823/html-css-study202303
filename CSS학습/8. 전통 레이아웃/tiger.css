@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background: rgba(128, 128, 128, 0.753);
+    font-family: '굴림', 'Gulim', serif;
+}
+#wrapper {
+            
+    width: 870px; 
+    margin: 0 auto;
+}
+#wrapper header {
+    text-align: center;
+    border: 1px solid #000;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background: rgba(9, 7, 119, 0.925);
+}
+#wrapper header h1 {
+    margin-top: 20px;
+    font-size: 2em;
+    font-weight: 1000;
+    color: yellow;
+    font-family: '휴먼모음T', cursive;
+}
+#wrapper header h1 strong {
+    
+    font-size: 3em;
+    color: white;
+}
+#wrapper header h1 span {
+    font-size: 1.7em;
+}
+#wrapper header h1 em {
+    font-size: 2em;
+    color: gray;
+}
+#wrapper .container {
+    height: 500px;
+}
+#wrapper .clearfix {
+    clear: both;
+}
+#wrapper .container .menu {
+    width: 20%;
+    height: 500px;
+    
+    float: left;
+    background: lightgray;
+    
+}
+#wrapper .container .menu li{
+    margin-left: 20px;
+    font-size: 18px;
+    padding-top: 20px;    
+}
+#wrapper .container .menu li a{
+    color: black;
+}
+#wrapper .container .menu li a:hover {
+    color: blue;
+    font-weight: 700;
+}
+#wrapper .container .content {  
+    height: 500px;
+    width: 80%;
+    background: white;
+    float: right;
+    
+}
+#wrapper .container .content h2 {
+    color: yellow;
+    font-size: 40px;
+    font-weight: 700;
+    background: red;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    font-family: 'Rampart One', cursive;   
+}
+#wrapper .container .content p {
+    padding: 20px;
+    text-align: justify;
+   
+    
+    
+}
+#wrapper footer {
+    background: rgba(128, 128, 128, 0.555);
+}
+#wrapper footer address {
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
